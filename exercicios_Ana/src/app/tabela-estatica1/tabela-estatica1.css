@@ -1,0 +1,82 @@
+/* Container principal com flexbox */
+.tabela-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do título */
+.tabela-container h1 {
+    color: #0c226b;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilo do parágrafo */
+.tabela-container p {
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Wrapper da tabela com flexbox */
+.tabela-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Estilos da tabela */
+table {
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Células do cabeçalho */
+th {
+    background-color: #0c226b;
+    color: white;
+    padding: 12px 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Células normais */
+td {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Efeito hover nas linhas */
+tr:hover {
+    background-color: #e8f3f8;
+}
+
+/* Alternar cores das linhas */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsividade com flexbox */
+@media (max-width: 768px) {
+    .tabela-container {
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    th, td {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}

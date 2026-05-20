@@ -1,0 +1,27 @@
+.tabela-semantica {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.tabela-semantica thead {
+    background-color: #382688;
+    color: white;
+}
+
+.tabela-semantica th,
+.tabela-semantica td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela-semantica tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.tabela-semantica tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
